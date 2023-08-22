@@ -6,7 +6,8 @@ function App() {
   return (
     <>
     <Header/>
-    <Player/>
+    <Player whichPlayer='x'/>
+    <Player whichPlayer='o'/>
     </>
   );
 }
