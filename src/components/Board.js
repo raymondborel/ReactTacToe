@@ -2,7 +2,6 @@ import Square from "./Square";
 function Board(props) {
   return (
     <div className="board">
-      the board!
       <Square />
       <Square />
       <Square />
