@@ -1,8 +1,9 @@
 function Square(props) {
-    return (
-        <div>
-            <h4>square</h4>
-        </div>
-    )
+  const { value, onClick } = props;
+  return (
+    <div>
+      <button onClick={onClick}>{value}</button>
+    </div>
+  );
 }
 export default Square;
