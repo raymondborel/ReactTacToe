@@ -1,5 +1,11 @@
 import Square from "./Square";
-function Board(props) {
+import Player from "./Player"
+import { useState } from 'react'
+
+function Board() {
+    const [squares, setSquares] = useState(Array(9).fill(null));
+    const [currentPlayer, setCurrentPlayer] = useState('X')
+
   return (
     <div className="board">
       <Square />
