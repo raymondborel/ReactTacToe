@@ -14,17 +14,15 @@ function Board() {
             setCurrentPlayer(currentPlayer === 'X' ? 'O': 'X')
         }
     }
+
   return (
-    <div className="board">
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
+
+    <div> 
+        <div className="board">
+            {squares.map((value, index) => (
+                <Square key={index} value={value} onClick= {() => handleSquareClick(index)} />
+            ))}
+        </div>
     </div>
   );
 }

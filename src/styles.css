@@ -15,7 +15,7 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
-  .container > div {
+  .container {
   display: flex;
   background: var(--yankees-blue);
   flex-wrap: wrap;
