@@ -73,9 +73,3 @@ h1 {
   color: var(--react);
   text-align: center;
 }
-
-.button {
-  display: flex;
-  justify-content: center;  
-
-}

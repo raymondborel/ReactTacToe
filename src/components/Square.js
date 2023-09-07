@@ -1,8 +1,8 @@
 function Square(props) {
-  const { value, onClick } = props;
+  const { value, onClick, disabled } = props;
   return (
     <>
-      <button onClick={onClick}>{value}</button>
+      <button onClick={onClick} disabled={disabled}>{value}</button>
     </>
   );
 }
