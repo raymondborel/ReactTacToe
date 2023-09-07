@@ -67,8 +67,15 @@ h1 {
   color: var(--react);
   text-align: center;
 }
+
 h1 {
   flex-basis: 60%;
   color: var(--react);
   text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;  
+
 }
