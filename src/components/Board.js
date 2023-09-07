@@ -15,6 +15,12 @@ function Board() {
         }
     }
 
+    function newGame() {
+        const newSquares = Array(9).fill(null);
+        setSquares(newSquares);
+        setCurrentPlayer('X');
+    }
+
   return (
 
     <div> 
@@ -22,6 +28,9 @@ function Board() {
             {squares.map((value, index) => (
                 <Square key={index} value={value} onClick= {() => handleSquareClick(index)} />
             ))}
+        </div>
+        <div>
+            <button onClick={newGame}>New Game</button>
         </div>
     </div>
   );
