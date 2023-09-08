@@ -5,7 +5,7 @@ function Board() {
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [currentPlayer, setCurrentPlayer] = useState('X');
     const [gameOver, setGameOver] = useState(false);
-    
+
     function handleSquareClick(squareIndex) {
         if(!gameOver && !squares[squareIndex]) {
             const newSquares = [...squares];
@@ -27,6 +27,7 @@ function Board() {
         const newSquares = Array(9).fill(null);
         setSquares(newSquares);
         setCurrentPlayer('X');
+        setGameOver(false);
     }
 
     function checkWinners(squares) {
