@@ -2,9 +2,8 @@ function Player(props) {
     return (
 
             <div className="player">
-                <div className={props.whichPlayer}>
-                    <h2>Player {props.whichPlayer}</h2>
-                    <h1>Wins: {props.wins}</h1>
+                <div className={`scoreBoard ${props.whichPlayer}`}>
+                    <h2>Player {props.whichPlayer} Wins: {props.wins}</h2>
                 </div>
             </div>
     )
