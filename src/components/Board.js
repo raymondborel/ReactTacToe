@@ -1,10 +1,11 @@
 import Square from "./Square";
 import { useState } from 'react'
 
-function Board() {
+function Board({ playerXWins, playerOWins, setPlayerXWins, setPlayerOWins }) {
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [currentPlayer, setCurrentPlayer] = useState('X');
     const [gameOver, setGameOver] = useState(false);
+    
 
     function handleSquareClick(squareIndex) {
         if(!gameOver && !squares[squareIndex]) {
@@ -19,6 +20,11 @@ function Board() {
 
             if (winner) {
                 setGameOver(true);
+                if(winner === 'X') {
+                    setPlayerXWins(playerXWins + 1);
+                } else if (winner === 'O') {
+                    setPlayerOWins(playerOWins + 1);
+                }
             }
         }
     }

@@ -6,15 +6,15 @@ import { useState } from 'react';
 
 function App() {
 
-  const [playerXWins,setPlayerXWins] = useState(0);
-  const [playerOWins,setPlayerOWins] = useState(0);
-  
+  const [playerXWins, setPlayerXWins] = useState(0);
+  const [playerOWins, setPlayerOWins] = useState(0);
+
   return (
     <>
     <Header/>
     <Player whichPlayer='X' wins={playerXWins}/>
     <Player whichPlayer='O'wins={playerOWins}/>
-    <Board/>
+    <Board playerXWins={playerXWins} playerOWins={playerOWins} setPlayerOWins={setPlayerOWins} setPlayerXWins={setPlayerXWins}/>
     </>
   );
 }
