@@ -52,17 +52,24 @@ h4 {
 
 .player {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.scoreBoard {
+  display: flex;
   align-items: center;
 }
 
-
 .X {
   color: var(--aquamarine);
+  display: flex;
   text-align: center;
 }
 
 .O {
   color: var(--aquamarine);
+  display: flex;
+  text-align: center;
 }
 h1 {
   flex-basis: 60%;
