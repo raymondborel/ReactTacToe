@@ -36,6 +36,11 @@ function Board({ playerXWins, playerOWins, setPlayerXWins, setPlayerOWins }) {
         setGameOver(false);
     }
 
+    function clearWins(){
+        setPlayerOWins(0)
+        setPlayerXWins(0)
+    }
+
     function checkWinners(squares) {
         const winningCombos = [
             [0,1,2],
@@ -67,6 +72,10 @@ function Board({ playerXWins, playerOWins, setPlayerXWins, setPlayerOWins }) {
         </div>
         <div className="button">
             <button onClick={newGame}>New Game</button>
+        </div>
+
+        <div className="button">
+            <button onClick={clearWins}>Clear Wins</button>
         </div>
     </div>
   );
