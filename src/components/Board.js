@@ -71,11 +71,12 @@ function Board({ playerXWins, playerOWins, setPlayerXWins, setPlayerOWins }) {
             ))}
         </div>
         <div className="button">
-            <button onClick={newGame}>New Game</button>
-        </div>
-
-        <div className="button">
-            <button onClick={clearWins}>Clear Wins</button>
+            <div>
+                <button onClick={newGame}>New Game</button>
+            </div>
+            <div>
+                <button onClick={clearWins}>Clear Wins</button>
+            </div>
         </div>
     </div>
   );
