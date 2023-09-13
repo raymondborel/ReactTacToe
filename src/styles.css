@@ -50,13 +50,15 @@ h4 {
   align-self: center;
 }
 
-.X, .O {
-  flex-basis: 45%;
-  text-align: center;
+.player {
+  display: flex;
+  align-items: center;
 }
 
+
 .X {
-  color: var(--sea-serpent);
+  color: var(--aquamarine);
+  text-align: center;
 }
 
 .O {
@@ -68,8 +70,4 @@ h1 {
   text-align: center;
 }
 
-h1 {
-  flex-basis: 60%;
-  color: var(--react);
-  text-align: center;
-}
+
