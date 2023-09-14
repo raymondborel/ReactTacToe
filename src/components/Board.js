@@ -19,16 +19,20 @@ function Board({ playerXWins, playerOWins, setPlayerXWins, setPlayerOWins }) {
             }
 
             if (winner) {
-                setGameOver(true);
                 if(winner === 'X') {
                     setPlayerXWins(playerXWins + 1);
+                    newSquares[squareIndex] = 'X'
+                    setGameOver(true);
                 } else if (winner === 'O') {
                     setPlayerOWins(playerOWins + 1);
+                    newSquares[squareIndex] = 'O'
+                    setGameOver(true);
                 }
             }
         }
     }
 
+    
     function newGame() {
         const newSquares = Array(9).fill(null);
         setSquares(newSquares);

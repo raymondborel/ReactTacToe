@@ -91,5 +91,6 @@ h1 {
 .button {
   display: flex;
   justify-content: space-evenly;
+  
 }
 
